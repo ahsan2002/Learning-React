@@ -1,0 +1,12 @@
+.head{
+    text-align: center;
+    color: rgb(192, 123, 20);
+    text-decoration: underline;
+    margin: 50px 20px;
+}
+
+.myimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
