@@ -1,6 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 // import './index.css';
+// import Heading from './Components/Heading';
+// import Para from './Components/Para';
+// import List from './Components/List';
+import App from './App';
 
 // ReactDOM.render('kya dekhana hai','kaha dekhna hai','callback function')
 
@@ -65,29 +69,34 @@ import ReactDOM from 'react-dom';
 //JSX attributes
 
 //inline css
-const heading={
-    textAlign:'center',
-    color:'blue',
-    fontFamily: '"Oswald", sans-serif',
+// const heading={
+//     textAlign:'center',
+//     color:'blue',
+//     fontFamily: '"Oswald", sans-serif',
 
-}
+// }
 
-const img1="https://api.lorem.space/image/movie?w=150&h=220";
-const img2="https://api.lorem.space/image/game?w=150&h=220";
-const img3="https://api.lorem.space/image/book?w=150&h=220";
+// const img1="https://api.lorem.space/image/movie?w=150&h=220";
+// const img2="https://api.lorem.space/image/game?w=150&h=220";
+// const img3="https://api.lorem.space/image/book?w=150&h=220";
 
-ReactDOM.render(<>
-{/* <a href="https://github.com/" target="_ahsan">Click me</a> */}
-<h1 className='head' style={heading}>Ahsan Omerjee</h1>
-<div className='myimg'>
-<img src={img1} alt='myimg' />
-<img src={img2} alt='myimg' />
-<img src={img3} alt='myimg' />
-</div>
-</>,document.getElementById("root"));
+// ReactDOM.render(<>
+// {/* <a href="https://github.com/" target="_ahsan">Click me</a> */}
+// <h1 className='head' style={heading}>Ahsan Omerjee</h1>
+// <div className='myimg'>
+// <img src={img1} alt='myimg' />
+// <img src={img2} alt='myimg' />
+// <img src={img3} alt='myimg' />
+// </div>
+// </>,document.getElementById("root"));
 
 
 //new react 18
-// const root=createRoot(document.getElementById("root"));
+const root=ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(<><h1>My name is ahsan</h1></>);
+
+root.render(<>
+{/* calling Components */}
+        <App></App>
+        
+</>);
