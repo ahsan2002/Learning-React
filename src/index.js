@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom/client';
 // import Heading from './Components/Heading';
 // import Para from './Components/Para';
 // import List from './Components/List';
-import App from './App';
+// import  {App,App1,App2} from './App';
+import App from './App'
+
 
 // ReactDOM.render('kya dekhana hai','kaha dekhna hai','callback function')
 
@@ -92,11 +94,23 @@ import App from './App';
 
 
 //new react 18
+// const root=ReactDOM.createRoot(document.getElementById("root"));
+
+
+// root.render(
+//         <>
+//        {/* {<App></App>}
+//        {<App1></App1>}
+//        {<App2></App2>} */}
+
+//        <h1>My name is {name} </h1>
+//        </>
+        
+// );
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
-
-root.render(<>
-{/* calling Components */}
+//calculator
+root.render(
         <App></App>
         
-</>);
+);
