@@ -53,23 +53,30 @@ import {add,sub,mul,div} from './Calc';
 
 
 const App=()=>{
-    const state=useState();
+    // const state=useState();
     // console.log(state);
-    //usestate hook
+    // usestate hook
     const [count,setCount]=useState(0);
-    
-    // let count=0;
     const IncNum=()=>{
         setCount(count+1);
-        
         // console.log('click'+ count++);
     }
 
+    const drecNum=()=>{
+        setCount(count-1);
+        // console.log('click'+ count++);
+    }
 
+    const reNum=()=>{
+        setCount(0);
+        // console.log('click'+ count++);
+    }
     return(
         <>
         <h1>{count}</h1>
-        <button onClick={IncNum}>Click Me</button>
+        <button onClick={IncNum}>Increase</button>
+        <button onClick={reNum}>Reset</button>
+        <button onClick={drecNum}>Decrease</button>
         </>
     )
 }
