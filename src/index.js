@@ -109,23 +109,24 @@ import App from './App'
 // );
 
 
-var Condition=()=>{
-        let a=6;
-        // if else condition
-        if(a>2){
-                return "correct";
-        }
-        else{
-                return "not"
-        }
+// var Condition=()=>{
+//         let a=6;
+//         // if else condition
+//         if(a>2){
+//                 return "correct";
+//         }
+//         else{
+//                 return "not"
+//         }
 
-}
+// }
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
 //calculator
 root.render(
-        // <App></App>
-        <Condition/>
+        // <Condition/>
+        <App></App>
+
         
 );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Heading from "./Components/Heading";
 // import Para from "./Components/Para";
 // import List from "./Components/List";
@@ -36,18 +36,41 @@ import {add,sub,mul,div} from './Calc';
 // export  default name;
 
 //calculator
-function App(){
+// function App(){
+//     return(
+//         <>
+//        <ul>
+
+//         <li>The sum of two no is {add(20,4)}</li>
+//         <li>The subtraction of two no is {sub(20,4)}</li>
+//         <li>The multiplication of two no is {mul(5,2)}</li>
+//         <li>The division of two no is {div(20,3)}</li>
+
+//        </ul>
+//        </>
+//     )
+// }
+
+
+const App=()=>{
+    const state=useState();
+    // console.log(state);
+    //usestate hook
+    const [count,setCount]=useState(0);
+    
+    // let count=0;
+    const IncNum=()=>{
+        setCount(count+1);
+        
+        // console.log('click'+ count++);
+    }
+
+
     return(
         <>
-       <ul>
-
-        <li>The sum of two no is {add(20,4)}</li>
-        <li>The subtraction of two no is {sub(20,4)}</li>
-        <li>The multiplication of two no is {mul(5,2)}</li>
-        <li>The division of two no is {div(20,3)}</li>
-
-       </ul>
-       </>
+        <h1>{count}</h1>
+        <button onClick={IncNum}>Click Me</button>
+        </>
     )
 }
 
