@@ -51,7 +51,6 @@ import {add,sub,mul,div} from './Calc';
 //     )
 // }
 
-
 const App=()=>{
     // const state=useState();
     // console.log(state);
@@ -80,5 +79,4 @@ const App=()=>{
         </>
     )
 }
-
 export default App;
